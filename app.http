@@ -1,0 +1,30 @@
+GET http://localhost:3003
+###
+
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "type":"user",
+    "name":"sai",
+    "email":"saiprakash@gmail.com",
+    "password":"Sai@1234",
+    "contactNumber" :"9944455511"  
+}
+###
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email":"saiprakash@gmail.com",
+    "password":"Sai@1234"
+}
+###
+GET http://localhost:3003/myprofile
+x-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRlZWI4NTk5ZWVkNDI3MDM1OTY1YjQ0IiwiaWF0IjoxNjkzMzcwMjEyLCJleHAiOjIwNTMzNzAyMTJ9.TzU8fDUx8cAZUg7AWJNMpLjbndofG-fgXBEkTt-HC0Q
+
+###
+GET http://localhost:3003/allusers
+
+###
+POST http://localhost:3003/logout
